@@ -21,6 +21,7 @@ module.exports = class DragDrop extends Plugin {
     this.defaultLocale = {
       strings: {
         dropHereOr: 'Drop files here or %{browse}',
+		dropHereOr2: 'Drop files here or',
         browse: 'browse'
       }
     }
@@ -169,6 +170,9 @@ module.exports = class DragDrop extends Plugin {
         {this.i18nArray('dropHereOr', {
           browse: <span class="uppy-DragDrop-browse">{this.i18n('browse')}</span>
         })}
+		<span class="img-hook">
+			{this.i18nArray('dropHereOr2')}
+		</span>
       </div>
     )
   }
